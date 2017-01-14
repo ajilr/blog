@@ -1,0 +1,25 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 homepage_content about">
+    <h2>About</h2>
+    <hr>
+    <p>Lorem Ipsum is simply <a href="#">dummy</a> text of the printing and typesetting <a href="#">industry</a>. Lorem Ipsum has been the industry's </p><p>standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially <a href="#">unchanged</a>.</p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Stuff I'hv Written</h2>
+    <hr>
+    <% @post.each do |post| %>
+      <h3><%= link_to post.title, post %></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Stuff I'hv Bult</h2>
+    <hr>
+    <h3>Unicast</h3>
+    <p class="date">Friday Aplil 10th</p>
+    <h3>My Community</h3>
+    <p class="date">Friday Aplil 10th</p>
+    <h3>12 in 12 challenge</h3>
+    <p class="date">Friday Aplil 10th</p>
+  </div>
+</div>
